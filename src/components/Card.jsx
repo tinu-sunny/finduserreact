@@ -3,8 +3,9 @@ import styled from 'styled-components';
 
 const Card = ({name,atm}) => {
   const user = name
+  
 
-    // console.log(atm.cardType);
+    console.log(atm.bank);
 
     
     
@@ -13,7 +14,7 @@ const Card = ({name,atm}) => {
       <div className="flip-card">
         <div className="flip-card-inner">
           <div className="flip-card-front">
-            {/* <p className="heading_8264">{atm.cardType}</p> */}
+            <p className="heading_8264">{atm?.bank?.cardType}</p>
             <svg className="logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width={36} height={36} viewBox="0 0 48 48">
               <path fill="#e0e0e0" d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z" />
               <path fill="#c0c0c0" d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z" />
@@ -73,11 +74,11 @@ const Card = ({name,atm}) => {
       OjU2KzAwOjAw0ssWdwAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wMi0xM1QwODoxOTo1Nisw
       MDowMIXeN6gAAAAASUVORK5CYII=" />
             </svg>
-            {/* <p className="number">{atm.cardNumber}</p> */}
-            {/* <p className="date_8264">{atm.cardExpire}</p> */}
-            <p className="exp">EXP</p>
-            <p className="cvc_number">123</p>
-            <p className="cvc">CVC</p>
+            <p className="number">{atm?.bank?.cardNumber}</p>
+         
+            <p className="exp">{atm?.bank?.cardExpire}</p>
+            <p className="cvc_number">{atm?.bank?.cardExpire}</p>
+    
           </div>
         </div>
       </div>

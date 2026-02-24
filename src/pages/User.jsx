@@ -79,7 +79,7 @@ export default function User() {
 
         <Col>
          <div id='atm'>
-        <Card atm={user.bank} name={user.firstName}/>
+        <Card atm={user} name={user.firstName}/>
       </div>
       </Col>
       </Row>
